@@ -2,8 +2,8 @@
 - hosts: all
   become: yes
   tasks: 
-   name: install wget
-   apt: 
-     name: wget
-     state: present
+  name: install wget
+  apt: 
+   name: wget
+   state: present
    when: ansible_os_family== "Debian"
